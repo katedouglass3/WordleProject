@@ -1,11 +1,15 @@
 package Wordle;
 
+import Wordle.GuessEvaluator;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * A test class that tests GuessEvaluator
+ */
 class GuessEvaluatorTest {
     /** An instance of GuessEvaluator */
     private GuessEvaluator guessEvaluator;

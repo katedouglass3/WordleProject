@@ -236,9 +236,4 @@ public class Wordle {
         // Game is over if the word is guessed correctly, or you ran out of guesses
         return (this.lastGuess.equals(this.secretWord) || this.guessNumber == 6);
     }
-
-    public int getGuessNumber() {
-        return this.guessNumber;
-    }
-
 }
