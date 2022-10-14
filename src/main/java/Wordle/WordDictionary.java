@@ -96,7 +96,7 @@ public class WordDictionary {
     /**
      * Creates a wordList as an ArrayList from the wordSet
      */
-    public void addWordsToList(){
+    private void addWordsToList(){
         this.wordList.addAll(this.wordSet);
     }
 
@@ -127,5 +127,23 @@ public class WordDictionary {
     public boolean checkGuess(String guess) {
         // If the guess is in the wordSet, return true
         return (wordSet.contains(guess));
+    }
+
+    /**
+     * A getter method that gets the wordSet for testing purposes
+     *
+     * @return wordSet a set of strings of all the words
+     */
+    public Set<String> getWordSet(){
+        return wordSet;
+    }
+
+    /**
+     * A getter method gets the wordList for testing purposes
+     *
+     * @return wordList a list of strings of all the words
+     */
+    public ArrayList<String> getWordList() {
+        return wordList;
     }
 }

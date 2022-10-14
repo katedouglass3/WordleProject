@@ -53,6 +53,15 @@ public class GuessEvaluator {
     }
 
     /**
+     * Getter method for testing setSecretWord method
+     *
+     * @return - the secret word
+     */
+    public String getSecretWord(){
+        return this.secretWord;
+    }
+
+    /**
      * A method that returns an encoded String representing which letters from a guess
      * are in the right place, in the wrong place, or not in the word.
      *

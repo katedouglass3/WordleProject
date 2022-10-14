@@ -40,7 +40,10 @@ public class TextProcessor {
     private HashSet<String> dictionarySet;
 
     /**
-     * Constructs a new TextProcessor by
+     * Constructs a new TextProcessor by setting wordMap to a new instance of HashMap<String, Integer>
+     * and dictionarySet to the set of words that is processed in processDictionary()
+     *
+     * @throws IOException if an invalid URL is entered in processDictionary (not thrown)
      */
     public TextProcessor() throws IOException {
         // Initialize the wordMap and dictionarySet
@@ -164,7 +167,7 @@ public class TextProcessor {
      *
      * @return - the number of unique words used in the game
      */
-    private int getTotalUniqueWords() {
+    public int getTotalUniqueWords() {
         return getSetOfWords().size();
     }
 
@@ -209,4 +212,9 @@ public class TextProcessor {
         }
         out.close();
     }
+
+    public Map<String, Integer> getWordMap() {
+        return wordMap;
+    }
 }
+

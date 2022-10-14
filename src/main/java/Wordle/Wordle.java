@@ -69,7 +69,7 @@ public class Wordle {
      *
      * @throws FileNotFoundException - thrown if the given file is not found
      */
-    public Wordle() throws FileNotFoundException {
+    public Wordle() {
         this.wordDictionary = new WordDictionary();
         // Create the word set to be used
         this.wordDictionary.createWordDictionary("C:\\Users\\kate1\\csci205_hw\\src\\main\\java\\Wordle\\words.txt");
@@ -235,6 +235,10 @@ public class Wordle {
     public boolean isGameOver(){
         // Game is over if the word is guessed correctly, or you ran out of guesses
         return (this.lastGuess.equals(this.secretWord) || this.guessNumber == 6);
+    }
+
+    public int getGuessNumber() {
+        return this.guessNumber;
     }
 
 }
